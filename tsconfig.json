@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "lib": [
+      "es6",
+      "DOM"
+    ],
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["packages/**/*"],
+  "exclude": [
+    "node_modules",
+    "**/dist/**"
+  ]
+}
