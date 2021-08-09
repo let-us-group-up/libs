@@ -15,7 +15,7 @@ enum Edge {
   End = 'end',
 }
 
-interface IconButtonProps {
+export interface IconButtonProps {
   color: `${Color}`;
   /**
    * For now the large size same is as the medium

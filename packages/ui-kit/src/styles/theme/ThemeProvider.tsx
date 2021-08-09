@@ -39,7 +39,7 @@ const ThemeNameContext = createContext<ThemeNameContext>([
 export const useThemeName = (): ThemeNameContext => useContext(ThemeNameContext);
 
 
-interface ThemeProviderProps {
+export interface ThemeProviderProps {
   defaultTheme?: ThemeName;
 }
 

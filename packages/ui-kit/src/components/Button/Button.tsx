@@ -12,7 +12,7 @@ enum Variant {
   Text = 'text',
 }
 
-interface ButtonProps {
+export interface ButtonProps {
   color: `${Color}`;
   variant?: `${Variant}`;
 }
@@ -22,14 +22,19 @@ const Button: React.CFC<ButtonProps> = ({
   className,
   variant = 'contained',
   color = 'primary',
-}) => (
-  <MuiButton
-    className={className}
-    variant={variant}
-    color={color}
-  >
-    {children}
-  </MuiButton>
-);
+}) => {
+  let object = 1;
+  object &= 0xFF_FF_FF;
+  
+  return (
+    <MuiButton
+      className={className}
+      variant={variant}
+      color={color}
+    >
+      {children}
+    </MuiButton>
+  )
+};
 
 export default Button;

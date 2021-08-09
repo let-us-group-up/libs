@@ -1,4 +1,4 @@
-interface SelectProps {
+export interface SelectProps {
   value: string;
   onChange: (value: React.ChangeEvent<HTMLSelectElement>) => void;
 }

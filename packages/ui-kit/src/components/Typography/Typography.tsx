@@ -29,7 +29,7 @@ const variantMapper = {
   [Variant.Subtitle2]: TagVariant.H6,
 };
 
-interface TypographyProps {
+export interface TypographyProps {
   /**
    * @default 'body1'
    */

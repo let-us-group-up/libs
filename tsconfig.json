@@ -21,6 +21,8 @@
   "include": ["packages/**/*"],
   "exclude": [
     "node_modules",
-    "**/dist/**"
+    "**/dist/**",
+    "**/*.stories.*",
+    "**/designSystem/**"
   ]
 }
