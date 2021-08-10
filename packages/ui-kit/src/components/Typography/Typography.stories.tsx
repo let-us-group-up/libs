@@ -18,12 +18,12 @@ const Template: ComponentStory<typeof Typography> = (args) => <Typography {...ar
 
 export const Primary = Template.bind({});
 Primary.args = {
-  color: 'primary',
+  color: 'textPrimary',
   children: 'Typography',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  color: 'secondary',
+  color: 'textSecondary',
   children: 'Typography',
 };
