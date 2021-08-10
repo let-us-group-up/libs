@@ -1,4 +1,4 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentStory } from '@storybook/react';
 import { buildTitle } from '../utils';
 
 import Button from './Button';
@@ -6,7 +6,13 @@ import Button from './Button';
 export default {
   title: buildTitle('Button'),
   component: Button,
-} as ComponentMeta<typeof Button>;
+  argTypes: {
+    color: {
+      options: ['primary', 'secondary'],
+      control: { type: 'select' },
+    },
+  },
+};
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
