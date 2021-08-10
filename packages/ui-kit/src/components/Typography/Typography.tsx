@@ -37,7 +37,7 @@ export interface TypographyProps {
   /**
    * @default 'primary'
    */
-  color?: 'primary' | 'secondary';
+  color?: 'textPrimary' | 'textSecondary';
   /**
    * @default 'depends on variant'
    */
@@ -48,7 +48,7 @@ const Typography: React.CFC<TypographyProps> = ({
   children,
   className,
   variant = Variant.Body1,
-  color,
+  color = 'textPrimary',
   component = variantMapper[variant],
 }) => (
   <MuiTypography
