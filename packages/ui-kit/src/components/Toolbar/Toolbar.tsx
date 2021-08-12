@@ -1,6 +1,10 @@
 import MuiToolbar from '@material-ui/core/Toolbar';
 
-const Toolbar: React.CFC = ({
+export interface ToolbarProps {
+  className?: string;
+}
+
+const Toolbar: React.FC<ToolbarProps> = ({
   children, className,
 }) => (
   <MuiToolbar className={className}>

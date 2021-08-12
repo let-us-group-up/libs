@@ -1,6 +1,10 @@
 import MuiMenuIcon from '@material-ui/icons/Menu';
 
-const MenuIcon: React.CVFC = ({ className }) => (
+export interface MenuIconProps {
+  className?: string;
+}
+
+const MenuIcon: React.VFC<MenuIconProps> = ({ className }) => (
   <MuiMenuIcon className={className} />
 );
 

@@ -1,7 +1,11 @@
 import MuiAppBar from '@material-ui/core/AppBar';
 import Toolbar from '../Toolbar';
 
-const AppBar: React.CFC = ({
+export interface AppBarProps {
+  className?: string;
+}
+
+const AppBar: React.FC<AppBarProps> = ({
   children,
   className,
 }) => (

@@ -12,8 +12,10 @@
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
+    "strictBindCallApply": true,
     "strict": true,
     "noLib": false,
+    "types": ["react-dom/experimental"],
     "lib": [
       "esnext",
       "DOM"
@@ -30,6 +32,6 @@
   "exclude": [
     "node_modules",
     "dist",
-    "**/*.stories.*"
+    "**/*.test.*"
   ]
 }

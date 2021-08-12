@@ -1,4 +1,8 @@
-const PageContainer: React.CFC = ({
+export interface PageContainerProps {
+  className?: string;
+}
+
+const PageContainer: React.FC<PageContainerProps> = ({
   children, className,
 }) => (
   <div className={className}>

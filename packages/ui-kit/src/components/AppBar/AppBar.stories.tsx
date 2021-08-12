@@ -1,4 +1,4 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { buildTitle } from '../utils';
 
 import AppBar from './AppBar';
@@ -9,7 +9,7 @@ export default {
   parameters:{
     layout: 'fullscreen',
   },
-};
+} as ComponentMeta<typeof AppBar>;
 
 const Template: ComponentStory<typeof AppBar> = (args) => <AppBar {...args} />;
 

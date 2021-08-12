@@ -1,5 +1,11 @@
-import MuiTypography from '@material-ui/core/Typography';
+import MuiLink from '@material-ui/core/Link';
 import { Variant } from '../../styles/typography';
+
+enum Color {
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Inherit = 'inherit',
+}
 
 enum TagVariant {
   H1 = 'h1',
@@ -29,37 +35,34 @@ const variantMapper = {
   [Variant.Subtitle2]: TagVariant.H6,
 };
 
-export interface TypographyProps {
+export interface LinkProps {
   className?: string;
+  href: string;
+  /**
+   * @default 'primary'
+   */
+  color?: `${Color}`;
   /**
    * @default 'body1'
    */
   variant?: `${Variant}`;
-  /**
-   * @default 'textPrimary'
-   */
-  color?: 'textPrimary' | 'textSecondary';
-  /**
-   * @default 'depends on variant'
-   */
-  component?: `${TagVariant}`;
 }
 
-const Typography: React.FC<TypographyProps> = ({
+const Link: React.FC<LinkProps> = ({
   children,
   className,
+  href,
   variant = Variant.Body1,
-  color = 'textPrimary',
-  component = variantMapper[variant],
+  color = Color.Primary,
 }) => (
-  <MuiTypography
+  <MuiLink
     className={className}
+    href={href}
     variant={variant}
     color={color}
-    component={component}
   >
     {children}
-  </MuiTypography>
+  </MuiLink>
 );
 
-export default Typography;
+export default Link;

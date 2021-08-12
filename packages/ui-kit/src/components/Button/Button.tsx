@@ -13,11 +13,12 @@ enum Variant {
 }
 
 export interface ButtonProps {
+  className?: string;
   color: `${Color}`;
   variant?: `${Variant}`;
 }
 
-const Button: React.CFC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   className,
   variant = 'contained',

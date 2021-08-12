@@ -5,7 +5,11 @@ const StyledPageContainer = styled('div')(({ theme }) => `
   padding-left: ${theme.spacing(3)};
 `);
 
-const PageContent: React.CFC = ({
+export interface PageContentProps {
+  className?: string;
+}
+
+const PageContent: React.FC<PageContentProps> = ({
   children, className,
 }) => (
   <StyledPageContainer className={className}>

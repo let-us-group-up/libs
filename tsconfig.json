@@ -11,18 +11,28 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strictBindCallApply": true,
     "strict": true,
+    "typeRoots": [
+      "@types"
+    ],
+    "types": [
+      "react-dom/experimental",
+      "jest",
+    ],
     "lib": [
       "es6",
       "DOM"
     ],
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["packages/**/*"],
+  "include": [
+    "packages/**/*",
+    "./jest-setup.ts"
+  ],
   "exclude": [
     "node_modules",
     "**/dist/**",
-    "**/*.stories.*",
     "**/designSystem/**"
   ]
 }

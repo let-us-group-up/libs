@@ -14,10 +14,10 @@
     }
   },
   "scripts": {
-    "build:ts": "tsc -b",
+    "build:ts": "tsc --project tsconfig.prod.json",
     "build": "yarn build:ts",
     "watch": "yarn build:ts -w --preserveWatchOutput",
-    "clean": "rm -rf ./dist && rm tsconfig.tsbuildinfo"
+    "clean": "rm -rf ./dist"
   },
   "peerDependencies": {
     "react": "^18.0.0-alpha-c76e4dbbc-20210722",

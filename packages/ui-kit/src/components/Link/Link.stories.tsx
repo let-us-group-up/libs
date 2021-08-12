@@ -1,29 +1,31 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { buildTitle } from '../utils';
 
-import Button from './Button';
+import Link from './Link';
 
 export default {
-  title: buildTitle('Button'),
-  component: Button,
+  title: buildTitle('Link'),
+  component: Link,
   argTypes: {
     color: {
       options: ['primary', 'secondary'],
       control: { type: 'select' },
     },
   },
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Link>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
+  href: 'https://storybook.js.org/tutorials/',
   color: 'primary',
-  children: 'Button',
+  children: 'Link',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  href: 'https://storybook.js.org/tutorials/',
   color: 'secondary',
-  children: 'Button',
+  children: 'Link',
 };
