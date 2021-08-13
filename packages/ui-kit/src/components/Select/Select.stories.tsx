@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { buildTitle } from '../utils';
 
@@ -10,9 +9,8 @@ export default {
   component: Select,
   argTypes: {
     value: {
-      control: {
-        disable: true,
-      },
+      options: ['value1', 'value2', 'value3'],
+      type: 'select',
     },
     onChange: {
       control: {
@@ -22,23 +20,16 @@ export default {
   },
 } as ComponentMeta<typeof Select>;
 
-const Template: ComponentStory<typeof Select> = (args) => {
-  const [value, setValue] = useState(args.value);
-  
-  return (
-    <Select 
-      {...args} 
-      value={value} 
-      onChange={({ target }: React.ChangeEvent<HTMLSelectElement>) => setValue(target.value)}
-    >
-      <Option value="value1">Value1</Option>
-      <Option value="value2">Value2</Option>
-      <Option value="value3">Value3</Option>
-    </Select>
-  );
-};
+const Template: ComponentStory<typeof Select> = (args) => (
+  <Select {...args}>
+    <Option value="value1">Value1</Option>
+    <Option value="value2">Value2</Option>
+    <Option value="value3">Value3</Option>
+  </Select>
+);
 
 export const Primary = Template.bind({});
 Primary.args = {
   value: 'value1',
+  onChange: (event) => event?.target && console.log(event.target.value),
 };
