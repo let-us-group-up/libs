@@ -31,17 +31,8 @@ const variantMapper = {
 
 export interface TypographyProps {
   className?: string;
-  /**
-   * @default 'body1'
-   */
   variant?: `${Variant}`;
-  /**
-   * @default 'textPrimary'
-   */
   color?: 'textPrimary' | 'textSecondary';
-  /**
-   * @default 'depends on variant'
-   */
   component?: `${TagVariant}`;
 }
 

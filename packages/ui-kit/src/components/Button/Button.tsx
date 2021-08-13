@@ -21,8 +21,8 @@ export interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   children,
   className,
-  variant = 'contained',
-  color = 'primary',
+  color = Color.Primary,
+  variant = Variant.Contained,
 }) => (
   <MuiButton
     className={className}

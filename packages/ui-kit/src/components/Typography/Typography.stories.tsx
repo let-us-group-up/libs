@@ -6,12 +6,6 @@ import Typography from './Typography';
 export default {
   title: buildTitle('Typography'),
   component: Typography,
-  argTypes: {
-    color: {
-      options: ['textPrimary', 'textSecondary'],
-      control: { type: 'select' },
-    },
-  },
 };
 
 const Template: ComponentStory<typeof Typography> = (args) => <Typography {...args} />;
