@@ -10,7 +10,9 @@
     "build-storybook": "build-storybook",
     "build-storybook-docs": "build-storybook --docs",
     "chromatic": "npx chromatic --exit-zero-on-changes",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -36,13 +38,13 @@
     "chromatic": "^5.10.0-canary.0",
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
+    "react": "^18.0.0-alpha-bc4e75112-20210815",
+    "react-dom": "^18.0.0-alpha-bc4e75112-20210815",
     "ts-node": "^10.2.0",
     "typescript": "^4.3.5",
     "webpack": "^5.50.0"
   },
   "dependencies": {
-    "@libs/ui-kit": "file:packages/ui-kit",
-    "react": "^18.0.0-alpha-c76e4dbbc-20210722",
-    "react-dom": "^18.0.0-alpha-c76e4dbbc-20210722"
+    "@libs/ui-kit": "file:packages/ui-kit"
   }
 }

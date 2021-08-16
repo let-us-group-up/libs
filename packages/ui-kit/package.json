@@ -20,8 +20,8 @@
     "clean": "rm -rf ./dist"
   },
   "peerDependencies": {
-    "react": "^18.0.0-alpha-c76e4dbbc-20210722",
-    "react-dom": "^18.0.0-alpha-c76e4dbbc-20210722"
+    "react": ">=18.0.0-alpha-c76e4dbbc-20210722",
+    "react-dom": ">=18.0.0-alpha-c76e4dbbc-20210722"
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
