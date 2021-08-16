@@ -1,4 +1,4 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { buildTitle } from '../utils';
 
 import Typography from './Typography';
@@ -6,18 +6,18 @@ import Typography from './Typography';
 export default {
   title: buildTitle('Typography'),
   component: Typography,
+} as ComponentMeta<typeof Typography>;
+
+export const Primary: ComponentStory<typeof Typography> = {
+  args: {
+    color: 'textPrimary',
+    children: 'Typography',
+  },
 };
 
-const Template: ComponentStory<typeof Typography> = (args) => <Typography {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  color: 'textPrimary',
-  children: 'Typography',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  color: 'textSecondary',
-  children: 'Typography',
+export const Secondary: ComponentStory<typeof Typography> = {
+  args: {
+    ...Primary.args,
+    color: 'textSecondary',
+  },
 };

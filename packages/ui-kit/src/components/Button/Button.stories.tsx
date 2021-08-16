@@ -11,38 +11,39 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  color: 'primary',
-  children: 'Button',
-};
-Primary.parameters = {
-  docs: {
-    storyDescription: 'Primary Button',
+export const Primary: ComponentStory<typeof Button> = {
+  args: {
+    color: 'primary',
+    children: 'Button',
   },
-};
+  parameters: {
+    docs: {
+      storyDescription: 'Primary Button',
+    },
+  },
+} as ComponentStory<typeof Button>;
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  color: 'secondary',
-  children: 'Button',
-};
+export const Secondary: ComponentStory<typeof Button> = {
+  args: {
+    ...Primary.args,
+    color: 'secondary',
+  },
+} as ComponentStory<typeof Button>;
 
-
-export const Colors: ComponentStory<typeof Button> = (args) => (
-  <div>
-    <Button {...args} color="primary" />
-    {' '}
-    <Button {...args} color="secondary" />
-  </div>
-);
-Colors.args = {
-  children: 'Button',
-};
-Colors.parameters = {
-  docs: {
-    storyDescription: 'Button colors',
+export const Colors: ComponentStory<typeof Button> = {
+  render: (args) => (
+    <div>
+      <Button {...args} color="primary" />
+      {' '}
+      <Button {...args} color="secondary" />
+    </div>
+  ),
+  args: {
+    ...Primary.args,
+  },
+  parameters: {
+    docs: {
+      storyDescription: 'Button colors',
+    },
   },
 };

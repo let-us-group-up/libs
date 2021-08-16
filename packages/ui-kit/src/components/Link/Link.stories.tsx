@@ -14,18 +14,17 @@ export default {
   },
 } as ComponentMeta<typeof Link>;
 
-const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  href: 'https://storybook.js.org/tutorials/',
-  color: 'primary',
-  children: 'Link',
+export const Primary: ComponentStory<typeof Link> = {
+  args: {
+    href: 'https://storybook.js.org/tutorials/',
+    color: 'primary',
+    children: 'Link',
+  },
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  href: 'https://storybook.js.org/tutorials/',
-  color: 'secondary',
-  children: 'Link',
+export const Secondary: ComponentStory<typeof Link> = {
+  args: {
+    ...Primary.args,
+    color: 'secondary',
+  },
 };

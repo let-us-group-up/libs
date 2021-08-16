@@ -11,14 +11,8 @@ export default {
   },
 } as ComponentMeta<typeof AppBar>;
 
-const Template: ComponentStory<typeof AppBar> = (args) => <AppBar {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  children: 'AppBar',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  children: 'AppBar',
+export const Primary: ComponentStory<typeof AppBar> = {
+  args: {
+    children: 'AppBar',
+  },
 };

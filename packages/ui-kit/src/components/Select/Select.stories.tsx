@@ -28,8 +28,10 @@ const Template: ComponentStory<typeof Select> = (args) => (
   </Select>
 );
 
-export const Primary = Template.bind({});
-Primary.args = {
-  value: 'value1',
-  onChange: (event) => event?.target && console.log(event.target.value),
+export const Primary: ComponentStory<typeof Select> = {
+  render: Template,
+  args: {
+    value: 'value1',
+    onChange: (event) => event?.target && console.log(event.target.value),
+  },
 };
