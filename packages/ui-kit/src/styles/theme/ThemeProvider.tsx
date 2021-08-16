@@ -11,7 +11,7 @@ import themesOptions, { ThemeName } from './themesOptions';
 
 type IThemes = Record<ThemeName, AdapterTheme>;
 
-const themes: IThemes = Object.entries(themesOptions).reduce<IThemes>((
+export const themes: IThemes = Object.entries(themesOptions).reduce<IThemes>((
   // Fix for reduce typing
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   acc, params: any,
@@ -24,7 +24,7 @@ const themes: IThemes = Object.entries(themesOptions).reduce<IThemes>((
   return acc;
 }, {} as IThemes);
 
-const defaultThemeName = ThemeName.Light;
+export const defaultThemeName = ThemeName.Light;
 
 
 type ChangeThemeName = (newTheme: ThemeName) => void;

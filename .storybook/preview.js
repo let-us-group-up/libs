@@ -1,5 +1,6 @@
 // import ReactDOM from 'react-dom';
-import { ThemeProvider } from '../packages/ui-kit/src/styles';
+import Adapter from '../packages/ui-kit/src/styles/adapter';
+import { themes } from '../packages/ui-kit/src/styles/theme/ThemeProvider';
 import CssBaseline from '../packages/ui-kit/src/components/CssBaseline';
 
 /* Hot fix which enables createRoot. It doesn't work with Chromatic */
@@ -41,11 +42,30 @@ export const parameters = {
   layout: 'centered',
 };
 
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: '0',
+    toolbar: {
+      icon: 'circlehollow',
+      items: [{ value: '0', title: 'light' }, { value: '1', title: 'dark' }],
+      showName: true,
+    },
+  },
+};
+
+const getTheme = (themeName) => themes[themeName];
+
 export const decorators = [
-  (Story) => (
-    <ThemeProvider>
-      <CssBaseline />
-      <Story />
-    </ThemeProvider>
-  ),
+  (Story, context) => {
+    const theme = getTheme(context.globals.theme);
+
+    return (
+      <Adapter.ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Story />
+      </Adapter.ThemeProvider>
+    );
+  },
 ];
