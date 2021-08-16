@@ -12,6 +12,9 @@ module.exports = {
     '@storybook/addon-a11y',
   ],
   core: {
+    // Has problems with HMR, @storybook/addon-a11y and something with docs plugin export
+    // Project includes dependencies for it
+    // builder: 'storybook-builder-vite',
     builder: 'webpack5',
   },
   features: {

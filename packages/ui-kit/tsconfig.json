@@ -17,8 +17,9 @@
     "noLib": false,
     "types": ["react-dom/experimental"],
     "lib": [
-      "esnext",
-      "DOM"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
     ],
     "moduleResolution": "node",
     "baseUrl": "./",
