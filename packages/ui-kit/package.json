@@ -1,5 +1,5 @@
 {
-  "name": "@libs/ui-kit",
+  "name": "@let-us-group-up/ui-kit",
   "repository": "https://github.com/let-us-group-up/libs.git",
   "version": "0.1.0",
   "license": "MIT",
@@ -37,5 +37,6 @@
     "@material-ui/core": "^5.0.0-beta.1",
     "@material-ui/icons": "^5.0.0-beta.1",
     "color": "^4.0.0"
-  }
+  },
+  "gitHead": "fc93b764c53cf287ebd56b29cf0783dbf80f389a"
 }
