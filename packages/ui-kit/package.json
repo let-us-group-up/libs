@@ -1,7 +1,8 @@
 {
-  "name": "@krakamod/ui-kit",
+  "name": "@libs/ui-kit",
   "repository": "https://github.com/let-us-group-up/libs.git",
-  "version": "0.1.2",
+  "version": "0.1.4",
+  "private": false,
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -18,7 +19,7 @@
     }
   },
   "publishConfig": {
-    "@libs/registry": "https://npm.pkg.github.com"
+    "@libs:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build:ts": "tsc --project tsconfig.prod.json",
@@ -38,5 +39,5 @@
     "@material-ui/icons": "^5.0.0-beta.1",
     "color": "^4.0.0"
   },
-  "gitHead": "515f4fb13be51aa605f5639612cae6d5d772b351"
+  "gitHead": "184422cf30a583646d2f167ffa6873c9277b37a9"
 }
