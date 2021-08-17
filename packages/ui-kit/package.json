@@ -1,5 +1,5 @@
 {
-  "name": "@let-us-group-up/ui-kit",
+  "name": "@krakamod/ui-kit",
   "repository": "https://github.com/let-us-group-up/libs.git",
   "version": "0.1.1",
   "license": "MIT",
@@ -38,5 +38,5 @@
     "@material-ui/icons": "^5.0.0-beta.1",
     "color": "^4.0.0"
   },
-  "gitHead": "fc93b764c53cf287ebd56b29cf0783dbf80f389a"
+  "gitHead": "515f4fb13be51aa605f5639612cae6d5d772b351"
 }
