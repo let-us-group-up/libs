@@ -1,7 +1,7 @@
 {
   "name": "@libs/ui-kit",
   "repository": "https://github.com/let-us-group-up/libs.git",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "license": "MIT",
   "exports": {
