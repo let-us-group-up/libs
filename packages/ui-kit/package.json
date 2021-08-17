@@ -1,5 +1,6 @@
 {
   "name": "@libs/ui-kit",
+  "repository": "https://github.com/let-us-group-up/libs",
   "version": "0.0.0",
   "license": "MIT",
   "exports": {
@@ -17,6 +18,7 @@
     "build:ts": "tsc --project tsconfig.prod.json",
     "build": "yarn build:ts",
     "watch": "yarn build:ts -w --preserveWatchOutput",
+    "test": "exit 0",
     "clean": "rm -rf ./dist"
   },
   "peerDependencies": {

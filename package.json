@@ -1,5 +1,6 @@
 {
-  "name": "root",
+  "name": "libs",
+  "repository": "https://github.com/let-us-group-up/libs",
   "private": true,
   "license": "MIT",
   "scripts": {
