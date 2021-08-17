@@ -1,7 +1,7 @@
 {
   "name": "@libs/ui-kit",
   "repository": "https://github.com/let-us-group-up/libs.git",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -11,7 +11,10 @@
   },
   "typesVersions": {
     "*": {
-      "*": [ "dist/*", "dist/*/index.d.ts" ]
+      "*": [
+        "dist/*",
+        "dist/*/index.d.ts"
+      ]
     }
   },
   "publishConfig": {
