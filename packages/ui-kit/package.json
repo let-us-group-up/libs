@@ -38,6 +38,5 @@
     "@material-ui/core": "^5.0.0-beta.1",
     "@material-ui/icons": "^5.0.0-beta.1",
     "color": "^4.0.0"
-  },
-  "gitHead": "184422cf30a583646d2f167ffa6873c9277b37a9"
+  }
 }
