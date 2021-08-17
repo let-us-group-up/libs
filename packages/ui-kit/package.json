@@ -18,9 +18,6 @@
       ]
     }
   },
-  "publishConfig": {
-    "@libs:registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build:ts": "tsc --project tsconfig.prod.json",
     "build": "yarn build:ts",
