@@ -22,7 +22,6 @@
     "build:ts": "tsc --project tsconfig.prod.json",
     "build": "yarn build:ts",
     "watch": "yarn build:ts -w --preserveWatchOutput",
-    "test": "exit 0",
     "clean": "rm -rf ./dist"
   },
   "peerDependencies": {
