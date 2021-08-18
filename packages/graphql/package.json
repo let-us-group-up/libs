@@ -1,0 +1,14 @@
+{
+  "name": "@libs/graphql",
+  "repository": "https://github.com/let-us-group-up/libs.git",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:ts": "tsc",
+    "build": "yarn build:ts",
+    "watch": "yarn build:ts -w --preserveWatchOutput",
+    "clean": "rm -rf ./dist"
+  }
+}

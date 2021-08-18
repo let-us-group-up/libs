@@ -2617,6 +2617,9 @@
   dependencies:
     js-cookie "^3.0.0"
 
+"@libs/graphql@file:packages/graphql":
+  version "0.0.0"
+
 "@libs/intl@file:packages/intl":
   version "0.0.0"
   dependencies:

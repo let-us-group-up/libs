@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@libs/browser-storage": "file:packages/browser-storage",
+    "@libs/graphql": "file:packages/graphql",
     "@libs/intl": "file:packages/intl",
     "@libs/router": "file:packages/router",
     "@libs/ui-kit": "file:packages/ui-kit"
