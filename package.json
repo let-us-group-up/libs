@@ -8,6 +8,7 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream",
     "clean": "lerna run clean --parallel",
+    "link-deps": "lerna link convert",
     "publish": "yarn run clean && yarn run build && lerna publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -51,6 +52,7 @@
     "webpack": "^5.50.0"
   },
   "dependencies": {
+    "@libs/browser-storage": "file:packages/browser-storage",
     "@libs/ui-kit": "file:packages/ui-kit"
   }
 }

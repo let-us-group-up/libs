@@ -2543,8 +2543,13 @@
     npmlog "^4.1.2"
     write-file-atomic "^3.0.3"
 
-"@libs/ui-kit@file:packages/ui-kit":
+"@libs/browser-storage@file:packages/browser-storage":
   version "0.0.0"
+  dependencies:
+    js-cookie "^3.0.0"
+
+"@libs/ui-kit@file:packages/ui-kit":
+  version "0.1.7"
   dependencies:
     "@emotion/react" "^11.4.0"
     "@emotion/styled" "^11.3.0"
@@ -10161,6 +10166,11 @@ jest@^27.0.6:
     "@jest/core" "^27.0.6"
     import-local "^3.0.2"
     jest-cli "^27.0.6"
+
+js-cookie@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.0.tgz#db1661d5459920ec95aaf186ccf74ceb4a495164"
+  integrity sha512-oUbbplKuH07/XX2YD2+Q+GMiPpnVXaRz8npE7suhBH9QEkJe2W7mQ6rwuMXHue3fpfcftQwzgyvGzIHyfCSngQ==
 
 js-string-escape@^1.0.1:
   version "1.0.1"
