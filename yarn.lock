@@ -2622,6 +2622,11 @@
   dependencies:
     react-intl "^5.20.9"
 
+"@libs/router@file:packages/router":
+  version "0.0.0"
+  dependencies:
+    react-router-dom "^6.0.0-beta.1"
+
 "@libs/ui-kit@file:packages/ui-kit":
   version "0.1.7"
   dependencies:
@@ -12923,6 +12928,18 @@ react-refresh@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.10.0.tgz#2f536c9660c0b9b1d500684d9e52a65e7404f7e3"
   integrity sha512-PgidR3wST3dDYKr6b4pJoqQFpPGNKDSCDx4cZoshjXipw3LzO7mG1My2pwEzz2JVkF+inx3xRpDeQLFQGH/hsQ==
+
+react-router-dom@^6.0.0-beta.1:
+  version "6.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.0.0-beta.1.tgz#484538a89409bce03ec9735e26676fa07fee36c7"
+  integrity sha512-tgbY5yy9vC8NFFQAobbPeCBgJDVsWuqw6pQEECUuBntfPMfpBP8Dx1sgOAYPGF13yAxc+h+Piml109ACrcZ3ng==
+  dependencies:
+    react-router "6.0.0-beta.1"
+
+react-router@6.0.0-beta.1:
+  version "6.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.0.0-beta.1.tgz#6121539bb0af0558bbfb01cc031fe388638bb0e5"
+  integrity sha512-Y0Pkb9/lYVKl+DGu8a9ZGXFmwczRZrCvoWIIej128wyjXtPrmcraPCy7VHQEgeQ3ps2+YbgIZcTro4FjOoN7HQ==
 
 react-sizeme@^3.0.1:
   version "3.0.1"

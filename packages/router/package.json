@@ -1,0 +1,21 @@
+{
+  "name": "@libs/router",
+  "repository": "https://github.com/let-us-group-up/libs.git",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:ts": "tsc",
+    "build": "yarn build:ts",
+    "watch": "yarn build:ts -w --preserveWatchOutput",
+    "clean": "rm -rf ./dist"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0-alpha-c76e4dbbc-20210722",
+    "react-dom": ">=18.0.0-alpha-c76e4dbbc-20210722"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.0.0-beta.1"
+  }
+}
