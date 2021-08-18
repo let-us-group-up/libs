@@ -1,34 +1,9 @@
 {
+  "extends": "../../tsconfig.react-package.json",
   "compilerOptions": {
-    "module": "esnext",
-    "jsx": "react-jsx",
-    "declaration": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strictBindCallApply": true,
-    "strict": true,
-    "noLib": false,
-    "types": ["react-dom/experimental"],
-    "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "moduleResolution": "node",
     "baseUrl": "./",
-    "outDir": "./dist",
-    "typeRoots": [
-      "src/@types"
-    ],
-    "rootDir": "src",
-    "forceConsistentCasingInFileNames": true
+    "outDir": "dist",
+    "rootDir": "src"
   },
   "exclude": [
     "node_modules",
