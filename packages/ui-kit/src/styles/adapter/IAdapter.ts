@@ -13,7 +13,7 @@ export interface IAdapter<ProviderTheme> {
         & React.ComponentProps<C>
         & StyleProps
     ) => string) => React.FC<React.ComponentProps<C> & StyleProps>;
-  
+
     <Tag extends keyof JSX.IntrinsicElements>(tag: Tag): <
       StyleProps extends Record<string, unknown> = {},
     >(callback: (params: {

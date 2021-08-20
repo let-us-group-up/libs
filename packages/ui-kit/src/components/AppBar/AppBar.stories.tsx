@@ -6,7 +6,7 @@ import AppBar from './AppBar';
 export default {
   title: buildTitle('AppBar'),
   component: AppBar,
-  parameters:{
+  parameters: {
     layout: 'fullscreen',
   },
 } as ComponentMeta<typeof AppBar>;

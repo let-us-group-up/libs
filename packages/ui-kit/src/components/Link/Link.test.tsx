@@ -9,7 +9,7 @@ describe('Link component', () => {
         Link Text
       </Link>,
     );
-  
+
     expect(getByRole('link')).toHaveAttribute('href', 'https://storybook.js.org/tutorials/');
     expect(getByRole('link')).toHaveTextContent('Link Text');
   });
