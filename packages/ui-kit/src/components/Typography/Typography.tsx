@@ -33,6 +33,7 @@ export interface TypographyProps {
   className?: string;
   variant?: `${Variant}`;
   color?: 'textPrimary' | 'textSecondary';
+  textAlign?: 'initial' | 'inherit' | 'left' | 'right' | 'center' | 'justify';
   component?: `${TagVariant}`;
 }
 
@@ -41,12 +42,14 @@ const Typography: React.FC<TypographyProps> = ({
   className,
   variant = Variant.Body1,
   color = 'textPrimary',
+  textAlign,
   component = variantMapper[variant],
 }) => (
   <MuiTypography
     className={className}
     variant={variant}
     color={color}
+    textAlign={textAlign}
     component={component}
   >
     {children}
