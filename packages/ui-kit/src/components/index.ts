@@ -4,6 +4,8 @@ export { default as Button } from './Button';
 
 export { default as CssBaseline } from './CssBaseline';
 
+export { default as Grid } from './Grid';
+
 export { default as IconButton } from './IconButton';
 
 export { default as Option } from './Option';
