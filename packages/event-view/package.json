@@ -1,0 +1,20 @@
+{
+  "name": "@libs/event-view",
+  "repository": "https://github.com/let-us-group-up/libs.git",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:ts": "ttsc",
+    "build": "yarn build:ts",
+    "watch": "yarn build:ts -w --preserveWatchOutput",
+    "clean": "rm -rf ./dist"
+  },
+  "peerDependencies": {
+    "@libs/intl": ">=0.0.0",
+    "@libs/ui-kit": ">=0.1.7",
+    "react": ">=18.0.0-alpha-c76e4dbbc-20210722",
+    "react-dom": ">=18.0.0-alpha-c76e4dbbc-20210722"
+  }
+}
