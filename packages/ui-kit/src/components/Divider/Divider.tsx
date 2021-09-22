@@ -6,11 +6,14 @@ type DividerVariant =
   | 'middle';
 
 export interface DividerProps {
+  /**
+   * @default 'fullWidth'
+   */
   variant?: DividerVariant;
 }
 
 const Divider: React.VFC<DividerProps> = ({
-  variant,
+  variant = 'fullWidth',
 }) => (
   <MuiDivider
     variant={variant}
