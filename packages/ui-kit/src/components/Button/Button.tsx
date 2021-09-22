@@ -14,7 +14,13 @@ enum Variant {
 
 export interface ButtonProps {
   className?: string;
-  color: `${Color}`;
+  /**
+   * @default 'primary'
+   */
+  color?: `${Color}`;
+  /**
+   * @default 'contained'
+   */
   variant?: `${Variant}`;
 }
 
