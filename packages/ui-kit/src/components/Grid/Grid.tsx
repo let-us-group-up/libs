@@ -1,9 +1,4 @@
-import MuiGrid, {
-  GridSpacing,
-  GridSize,
-  GridDirection,
-  GridWrap,
-} from '@material-ui/core/Grid';
+import MuiGrid from '@material-ui/core/Grid';
 
 type GridJustifyContent =
   | 'flex-start'
@@ -20,12 +15,40 @@ type GridAlignItems =
   | 'stretch'
   | 'baseline';
 
+type GridWrap =
+  | 'wrap'
+  | 'nowrap'
+  | 'wrap-reverse';
+
+type GridDirection =
+  | 'row'
+  | 'row-reverse'
+  | 'column'
+  | 'column-reverse';
+
+type GridSpacing = number;
+
+type GridSize =
+  | 'auto'
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12;
+
 export interface GridProps {
   className?: string;
   container?: boolean;
   spacing?: GridSpacing;
   item?: boolean;
-  xs?: boolean | GridSize;
+  xs?: GridSize;
   wrap?: GridWrap;
   direction?: GridDirection;
   justifyContent?: GridJustifyContent;
@@ -36,11 +59,11 @@ const Grid: React.FC<GridProps> = ({
   children,
   className,
   container,
-  spacing,
+  spacing = 0,
   item,
   xs,
-  wrap,
-  direction,
+  wrap = 'wrap',
+  direction = 'row',
   justifyContent,
   alignItems,
 }) => (
