@@ -39,6 +39,14 @@ export const parameters = {
     // sets the execution mode for the addon
     manual: false,
   },
+  backgrounds: {
+    default: 'grey',
+    values: [
+      { name: 'grey', value: '#f1f1f4' },
+      { name: 'light', value: '#fff' },
+      { name: 'dark', value: '#000' },
+    ],
+  },
   layout: 'centered',
 };
 
