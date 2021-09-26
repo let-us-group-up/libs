@@ -1,4 +1,4 @@
-import MuiAppBar from '@material-ui/core/AppBar';
+import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '../Toolbar';
 
 export interface AppBarProps {

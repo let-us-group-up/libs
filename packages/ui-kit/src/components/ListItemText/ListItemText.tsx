@@ -1,4 +1,4 @@
-import MuiListItemText from '@material-ui/core/ListItemText';
+import MuiListItemText from '@mui/material/ListItemText';
 
 export interface ListItemTextProps {
   primary: React.ReactNode;

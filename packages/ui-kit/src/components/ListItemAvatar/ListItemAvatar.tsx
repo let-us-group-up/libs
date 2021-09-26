@@ -1,4 +1,4 @@
-import MuiListItemAvatar from '@material-ui/core/ListItemAvatar';
+import MuiListItemAvatar from '@mui/material/ListItemAvatar';
 
 const ListItemAvatar: React.FC = ({
   children,

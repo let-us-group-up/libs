@@ -1,4 +1,4 @@
-import MuiTypography from '@material-ui/core/Typography';
+import MuiTypography from '@mui/material/Typography';
 import { Variant } from '../../styles/typography';
 
 enum TagVariant {

@@ -1,11 +1,11 @@
-import { ThemeOptions as MuiThemeOptions } from '@material-ui/core/styles';
+import { ThemeOptions as MuiThemeOptions } from '@mui/material/styles';
 import {
   PaletteColorOptions as MuiPaletteColorOptions,
   PaletteOptions as MuiPaletteOptions,
-} from '@material-ui/core/styles/createPalette';
+} from '@mui/material/styles/createPalette';
 import {
   TypographyStyleOptions as MuiTypographyStyleOptions,
-} from '@material-ui/core/styles/createTypography';
+} from '@mui/material/styles/createTypography';
 import Color from 'color';
 import {
   IThemeOptions,

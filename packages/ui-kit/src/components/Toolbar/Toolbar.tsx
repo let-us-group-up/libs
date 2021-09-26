@@ -1,4 +1,4 @@
-import MuiToolbar from '@material-ui/core/Toolbar';
+import MuiToolbar from '@mui/material/Toolbar';
 
 export interface ToolbarProps {
   className?: string;

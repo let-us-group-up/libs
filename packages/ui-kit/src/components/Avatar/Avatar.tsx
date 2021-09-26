@@ -1,4 +1,4 @@
-import MuiAvatar from '@material-ui/core/Avatar';
+import MuiAvatar from '@mui/material/Avatar';
 
 export interface AvatarProps {
   className?: string;

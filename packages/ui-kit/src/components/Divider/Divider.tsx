@@ -1,4 +1,4 @@
-import MuiDivider from '@material-ui/core/Divider';
+import MuiDivider from '@mui/material/Divider';
 
 type DividerVariant =
   | 'fullWidth'

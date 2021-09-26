@@ -1,4 +1,4 @@
-import MuiCssBaseline from '@material-ui/core/CssBaseline';
+import MuiCssBaseline from '@mui/material/CssBaseline';
 
 const CssBaseline: React.VFC = () => (
   <MuiCssBaseline />

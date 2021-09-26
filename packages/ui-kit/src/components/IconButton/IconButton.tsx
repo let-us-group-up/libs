@@ -1,4 +1,4 @@
-import MuiIconButton from '@material-ui/core/IconButton';
+import MuiIconButton from '@mui/material/IconButton';
 
 enum Color {
   Inherit = 'inherit',
@@ -17,7 +17,7 @@ enum Edge {
 
 export interface IconButtonProps {
   className?: string;
-  color: `${Color}`;
+  color?: `${Color}`;
   /**
    * For now the large size same is as the medium
    * @default 'medium'
@@ -30,15 +30,15 @@ export interface IconButtonProps {
 const IconButton: React.FC<IconButtonProps> = ({
   children,
   className,
-  color,
-  size,
+  color = 'inherit',
+  size = 'medium',
   edge,
   ariaLabel,
 }) => (
   <MuiIconButton
     className={className}
     color={color}
-    size={size === Size.Large ? Size.Medium : size}
+    size={size}
     edge={edge}
     aria-label={ariaLabel}
   >

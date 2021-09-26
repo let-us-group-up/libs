@@ -2,7 +2,7 @@ import {
   ThemeProvider as MuiThemeProvider,
   createTheme as createMuiTheme,
   experimentalStyled,
-} from '@material-ui/core/styles';
+} from '@mui/material/styles';
 import mapMuiThemeToIThemeView from './mapMuiThemeToIThemeView';
 import mapIThemeOptionsToMuiThemeOptionsView from './mapIThemeOptionsToMuiThemeOptionsView';
 import { IMuiAdapter } from './IMuiAdapter';

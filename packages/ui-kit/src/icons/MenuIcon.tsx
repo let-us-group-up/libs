@@ -1,4 +1,4 @@
-import MuiMenuIcon from '@material-ui/icons/Menu';
+import MuiMenuIcon from '@mui/icons-material/Menu';
 
 export interface MenuIconProps {
   className?: string;

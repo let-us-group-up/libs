@@ -1,4 +1,4 @@
-import { Theme as MuiTheme } from '@material-ui/core/styles';
+import { Theme as MuiTheme } from '@mui/material/styles';
 
 import { Variant } from '../../typography';
 import { IAdapter } from '../IAdapter';
@@ -15,7 +15,7 @@ export interface OverriddenMuiTypographyStyle {
   textTransform?: 'uppercase' | 'lowercase';
 }
 
-declare module '@material-ui/core/styles/createTypography' {
+declare module '@mui/material/styles/createTypography' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface FontStyle {
       fontFamily: NonNullable<React.CSSProperties['fontFamily']>;

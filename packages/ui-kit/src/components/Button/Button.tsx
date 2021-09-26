@@ -1,4 +1,4 @@
-import MuiButton from '@material-ui/core/Button';
+import MuiButton from '@mui/material/Button';
 
 enum Color {
   Primary = 'primary',

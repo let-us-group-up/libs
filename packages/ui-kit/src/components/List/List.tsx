@@ -1,4 +1,4 @@
-import MuiList from '@material-ui/core/List';
+import MuiList from '@mui/material/List';
 
 const List: React.FC = ({
   children,

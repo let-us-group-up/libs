@@ -1,4 +1,4 @@
-import MuiPaper from '@material-ui/core/Paper';
+import MuiPaper from '@mui/material/Paper';
 
 export interface PaperProps {
   className?: string;

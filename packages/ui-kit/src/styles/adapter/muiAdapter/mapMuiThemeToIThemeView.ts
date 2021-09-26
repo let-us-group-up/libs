@@ -1,7 +1,7 @@
-import { Theme as MuiTheme } from '@material-ui/core/styles';
+import { Theme as MuiTheme } from '@mui/material/styles';
 import {
   PaletteColor as MuiPaletteColor,
-} from '@material-ui/core/styles/createPalette';
+} from '@mui/material/styles/createPalette';
 import Color from 'color';
 import {
   ITheme,
