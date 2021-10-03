@@ -22,6 +22,7 @@ export interface ButtonProps {
    * @default 'contained'
    */
   variant?: `${Variant}`;
+  onClick: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -29,11 +30,13 @@ const Button: React.FC<ButtonProps> = ({
   className,
   color = Color.Primary,
   variant = Variant.Contained,
+  onClick,
 }) => (
   <MuiButton
     className={className}
     variant={variant}
     color={color}
+    onClick={onClick}
   >
     {children}
   </MuiButton>
