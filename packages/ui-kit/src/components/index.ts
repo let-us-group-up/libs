@@ -8,6 +8,8 @@ export { default as CssBaseline } from './CssBaseline';
 
 export { default as Divider } from './Divider';
 
+export { default as Drawer } from './Drawer';
+
 export { default as Grid } from './Grid';
 
 export { default as IconButton } from './IconButton';
