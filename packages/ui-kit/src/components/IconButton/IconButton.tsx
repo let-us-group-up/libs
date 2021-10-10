@@ -25,6 +25,7 @@ export interface IconButtonProps {
   size?: `${Size}`;
   edge?: `${Edge}`;
   ariaLabel?: string;
+  onClick: () => void;
 }
 
 const IconButton: React.FC<IconButtonProps> = ({
@@ -34,6 +35,7 @@ const IconButton: React.FC<IconButtonProps> = ({
   size = 'medium',
   edge,
   ariaLabel,
+  onClick,
 }) => (
   <MuiIconButton
     className={className}
@@ -41,6 +43,7 @@ const IconButton: React.FC<IconButtonProps> = ({
     size={size}
     edge={edge}
     aria-label={ariaLabel}
+    onClick={onClick}
   >
     {children}
   </MuiIconButton>

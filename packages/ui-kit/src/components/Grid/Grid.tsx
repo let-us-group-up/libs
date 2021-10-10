@@ -49,10 +49,13 @@ export interface GridProps {
   spacing?: GridSpacing;
   item?: boolean;
   xs?: GridSize;
+  md?: GridSize;
+  lg?: GridSize;
   wrap?: GridWrap;
   direction?: GridDirection;
   justifyContent?: GridJustifyContent;
   alignItems?: GridAlignItems;
+  component?: React.ElementType;
 }
 
 const Grid: React.FC<GridProps> = ({
@@ -62,10 +65,13 @@ const Grid: React.FC<GridProps> = ({
   spacing,
   item,
   xs,
+  md,
+  lg,
   wrap,
   direction,
   justifyContent,
   alignItems,
+  component = 'div',
 }) => (
   <MuiGrid
     className={className}
@@ -73,10 +79,13 @@ const Grid: React.FC<GridProps> = ({
     spacing={spacing}
     item={item}
     xs={xs}
+    md={md}
+    lg={lg}
     wrap={wrap}
     direction={direction}
     justifyContent={justifyContent}
     alignItems={alignItems}
+    component={component}
   >
     {children}
   </MuiGrid>

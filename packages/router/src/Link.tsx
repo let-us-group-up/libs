@@ -3,10 +3,20 @@ import { To, NavigateOptions } from './IRouter';
 
 export interface LinkProps extends NavigateOptions {
   to: To;
+  onClick?: () => void;
 }
 
-const Link: React.FC<LinkProps> = ({ to, children }) => (
-  <ReactRouterLink to={to}>
+const Link: React.FC<LinkProps> = ({
+  children,
+  to,
+  replace,
+  onClick,
+}) => (
+  <ReactRouterLink
+    to={to}
+    replace={replace}
+    onClick={onClick}
+  >
     {children}
   </ReactRouterLink>
 );

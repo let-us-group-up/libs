@@ -1,8 +1,7 @@
 import { styled } from '../../styles';
 
 const StyledPageContainer = styled('div')(({ theme }) => `
-  padding-right: ${theme.spacing(3)};
-  padding-left: ${theme.spacing(3)};
+  padding: ${theme.spacing(4, 3)};
 `);
 
 export interface PageContentProps {

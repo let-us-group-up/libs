@@ -63,7 +63,7 @@ const theme: IThemeOptions = {
     },
     divider: '#rgba(0, 0, 0, 0.12)',
     background: {
-      default: '#fff',
+      default: '#e9e9e9',
       paper: '#fff',
     },
     action: {
