@@ -1,6 +1,6 @@
 export type {
   To,
-  Path,
+  PathnameBase,
   Pathname,
   Search,
   Params,
@@ -12,6 +12,7 @@ export { default as Link } from './Link';
 export { default as Route } from './Route';
 export { default as Router } from './Router';
 export { default as Routes } from './Routes';
+export { default as Outlet } from './Outlet';
 export { default as useLocation } from './useLocation';
 export { default as useMatch } from './useMatch';
 export { default as useNavigate } from './useNavigate';

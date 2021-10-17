@@ -73,6 +73,7 @@
     "@libs/graphql": "file:packages/graphql",
     "@libs/intl": "file:packages/intl",
     "@libs/router": "file:packages/router",
-    "@libs/ui-kit": "file:packages/ui-kit"
+    "@libs/ui-kit": "file:packages/ui-kit",
+    "react-router-dom": "^6.0.0-beta.7"
   }
 }

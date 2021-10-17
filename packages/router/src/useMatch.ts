@@ -1,11 +1,11 @@
 import { useMatch as useReactRouterMatch } from 'react-router-dom';
-import { Path, PathMatch } from './IRouter';
+import { PathnameBase, PathMatch } from './IRouter';
 
-const useMatch = (pattern: Path): PathMatch | null => {
+const useMatch = (pattern: PathnameBase): PathMatch | null => {
   const match = useReactRouterMatch(pattern);
 
   return match && {
-    path: match.path,
+    pathnameBase: match.pathnameBase,
     pathname: match.pathname,
     params: match.params,
   };

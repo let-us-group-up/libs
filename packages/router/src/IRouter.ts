@@ -1,12 +1,12 @@
 export type To = string;
 
-export type Path = string;
+export type PathnameBase = string;
 
 export type Pathname = string;
 
 export type Search = string;
 
-export type Params = Record<string, string>;
+export type Params = Record<string, string | undefined>;
 
 export interface NavigateOptions {
   replace?: boolean;
@@ -18,7 +18,7 @@ export interface Location {
 }
 
 export interface PathMatch {
-  path: Path;
+  pathnameBase: PathnameBase;
   pathname: Pathname;
   params: Params;
 }
