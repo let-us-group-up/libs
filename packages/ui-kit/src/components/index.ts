@@ -24,6 +24,8 @@ export { default as ListItemAvatar } from './ListItemAvatar';
 
 export { default as ListItemText } from './ListItemText';
 
+export { default as MultilineTextField } from './MultilineTextField';
+
 export { default as Option } from './Option';
 
 export { default as PageContainer } from './PageContainer';
@@ -31,6 +33,8 @@ export { default as PageContainer } from './PageContainer';
 export { default as PageContent } from './PageContent';
 
 export { default as Select } from './Select';
+
+export { default as TextField } from './TextField';
 
 export { default as Toolbar } from './Toolbar';
 
