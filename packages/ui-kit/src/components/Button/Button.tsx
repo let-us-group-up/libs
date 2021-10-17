@@ -12,6 +12,12 @@ enum Variant {
   Text = 'text',
 }
 
+enum Size {
+  Small = 'small',
+  Medium = 'medium',
+  Large = 'large',
+}
+
 export interface ButtonProps {
   className?: string;
   /**
@@ -22,6 +28,8 @@ export interface ButtonProps {
    * @default 'contained'
    */
   variant?: `${Variant}`;
+  size?: `${Size}`;
+  fullWidth?: boolean;
   onClick: () => void;
 }
 
@@ -30,12 +38,16 @@ const Button: React.FC<ButtonProps> = ({
   className,
   color = Color.Primary,
   variant = Variant.Contained,
+  size = Size.Medium,
+  fullWidth,
   onClick,
 }) => (
   <MuiButton
     className={className}
     variant={variant}
     color={color}
+    size={size}
+    fullWidth={fullWidth}
     onClick={onClick}
   >
     {children}

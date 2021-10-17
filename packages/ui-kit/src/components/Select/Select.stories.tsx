@@ -31,6 +31,7 @@ const Template: ComponentStory<typeof Select> = (args) => (
 export const Primary: ComponentStory<typeof Select> = {
   render: Template,
   args: {
+    id: 'primary',
     value: 'value1',
     // eslint-disable-next-line no-console
     onChange: (event) => event?.target && console.log(event.target.value),
