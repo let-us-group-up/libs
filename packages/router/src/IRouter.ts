@@ -1,4 +1,4 @@
-export type To = string;
+export type To = string | number;
 
 export type PathnameBase = string;
 

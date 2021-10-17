@@ -8,7 +8,7 @@ const useNavigate = (): NavigateFunction => {
   return (
     to,
     options,
-  ) => navigate(to, options);
+  ) => navigate(to as string, options);
 };
 
 export default useNavigate;

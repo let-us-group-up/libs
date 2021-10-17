@@ -2705,6 +2705,11 @@
 "@libs/event-view@file:packages/event-view":
   version "0.0.0"
 
+"@libs/form@file:packages/form":
+  version "0.0.0"
+  dependencies:
+    react-hook-form "^7.17.4"
+
 "@libs/graphql@file:packages/graphql":
   version "0.0.0"
 
@@ -13439,6 +13444,11 @@ react-helmet-async@^1.0.7:
     prop-types "^15.7.2"
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
+
+react-hook-form@^7.17.4:
+  version "7.17.4"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.17.4.tgz#232b6aaccddb91eb4a228ac20b154abd90866fdb"
+  integrity sha512-7XhbCr7d9fDC1TgcK/BUbt7D3q0VJMu7jPErfsa0JrxVjv/nni41xWdJcy0Zb7R+Np8OsCkQ2lMyloAtE3DLiQ==
 
 react-inspector@^5.1.0:
   version "5.1.1"

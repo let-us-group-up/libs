@@ -1,1 +1,1 @@
-export { default } from './MultilineTextField';
+export { default, MultilineTextFieldProps } from './MultilineTextField';

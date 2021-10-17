@@ -1,6 +1,6 @@
 import MuiTextField from '@mui/material/TextField';
 
-export interface TextFieldProps {
+export interface MultilineTextFieldProps {
   className?: string;
   id: string;
   name: string;
@@ -13,10 +13,11 @@ export interface TextFieldProps {
   fullWidth?: boolean;
   helperText?: string;
   required?: boolean;
+  inputRef?: React.Ref<unknown>;
   onChange?: React.ChangeEventHandler<HTMLTextAreaElement>;
 }
 
-const TextField: React.VFC<TextFieldProps> = ({
+const MultilineTextField: React.VFC<MultilineTextFieldProps> = ({
   className,
   id,
   name,
@@ -29,6 +30,7 @@ const TextField: React.VFC<TextFieldProps> = ({
   fullWidth,
   helperText,
   required,
+  inputRef,
   onChange,
 }) => (
   <MuiTextField
@@ -48,8 +50,9 @@ const TextField: React.VFC<TextFieldProps> = ({
     fullWidth={fullWidth}
     helperText={helperText}
     required={required}
+    inputRef={inputRef}
     onChange={onChange}
   />
 );
 
-export default TextField;
+export default MultilineTextField;

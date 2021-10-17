@@ -70,6 +70,7 @@
   "dependencies": {
     "@libs/browser-storage": "file:packages/browser-storage",
     "@libs/event-view": "file:packages/event-view",
+    "@libs/form": "file:packages/form",
     "@libs/graphql": "file:packages/graphql",
     "@libs/intl": "file:packages/intl",
     "@libs/router": "file:packages/router",

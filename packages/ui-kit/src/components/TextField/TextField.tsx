@@ -13,6 +13,7 @@ export interface TextFieldProps {
   fullWidth?: boolean;
   helperText?: string;
   required?: boolean;
+  inputRef?: React.Ref<unknown>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
@@ -29,6 +30,7 @@ const TextField: React.VFC<TextFieldProps> = ({
   fullWidth,
   helperText,
   required,
+  inputRef,
   onChange,
 }) => (
   <MuiTextField
@@ -45,6 +47,7 @@ const TextField: React.VFC<TextFieldProps> = ({
     fullWidth={fullWidth}
     helperText={helperText}
     required={required}
+    inputRef={inputRef}
     onChange={onChange}
   />
 );

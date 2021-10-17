@@ -56,6 +56,7 @@ export interface GridProps {
   justifyContent?: GridJustifyContent;
   alignItems?: GridAlignItems;
   component?: React.ElementType;
+  onSubmit?: React.FormEventHandler<HTMLFormElement>;
 }
 
 const Grid: React.FC<GridProps> = ({
@@ -72,6 +73,7 @@ const Grid: React.FC<GridProps> = ({
   justifyContent,
   alignItems,
   component = 'div',
+  onSubmit,
 }) => (
   <MuiGrid
     className={className}
@@ -86,6 +88,7 @@ const Grid: React.FC<GridProps> = ({
     justifyContent={justifyContent}
     alignItems={alignItems}
     component={component}
+    onSubmit={onSubmit}
   >
     {children}
   </MuiGrid>

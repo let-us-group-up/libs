@@ -13,7 +13,7 @@ const Link: React.FC<LinkProps> = ({
   onClick,
 }) => (
   <ReactRouterLink
-    to={to}
+    to={to as string}
     replace={replace}
     onClick={onClick}
   >

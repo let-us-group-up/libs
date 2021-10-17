@@ -1,5 +1,9 @@
 import MuiButton from '@mui/material/Button';
 
+enum Type {
+  Submit = 'submit',
+}
+
 enum Color {
   Primary = 'primary',
   Secondary = 'secondary',
@@ -20,6 +24,7 @@ enum Size {
 
 export interface ButtonProps {
   className?: string;
+  type?: `${Type}`;
   /**
    * @default 'primary'
    */
@@ -30,12 +35,13 @@ export interface ButtonProps {
   variant?: `${Variant}`;
   size?: `${Size}`;
   fullWidth?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
   children,
   className,
+  type,
   color = Color.Primary,
   variant = Variant.Contained,
   size = Size.Medium,
@@ -44,6 +50,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => (
   <MuiButton
     className={className}
+    type={type}
     variant={variant}
     color={color}
     size={size}
